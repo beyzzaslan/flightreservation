@@ -13,6 +13,7 @@ public class Booking {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    
     @Column(unique = true, nullable = false)
     private String bookingNumber; // Rezervasyon numarası - Unique olmalı
 
