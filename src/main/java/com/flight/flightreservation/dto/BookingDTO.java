@@ -1,11 +1,12 @@
 package com.flight.flightreservation.dto;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+
 public class BookingDTO {
 
     private String bookingNumber;
@@ -14,3 +15,5 @@ public class BookingDTO {
     private String passengerEmail;
     private String passengerPhone;
 }
+
+

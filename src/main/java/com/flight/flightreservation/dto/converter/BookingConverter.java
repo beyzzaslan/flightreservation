@@ -15,7 +15,7 @@ public class BookingConverter {
     }
     //Rezervasyonu Kullanıcıya Gösterme (Entity -> DTO)
     //Veritabanından bir rezervasyon kaydı çektik. Bunu kullanıcıya süslü bir paket (BookingDTO) içinde sunmamız lazım.
-    public BookingDTO convertToData(Booking booking){
+    public BookingDTO convertToDto(Booking booking){
         return modelMapper.map(booking, BookingDTO.class);
     
     }
