@@ -15,7 +15,9 @@ public class UserRegistrationConverter {
     }
 
     //Neden sadece tek yönlü yazdık? Çünkü kullanıcı kayıt bilgilerini veritabanına atmak için bu converter'ı kullanırız. Kullanıcının şifresini içeren bu DTO'yu genellikle geri dışarı (Frontend'e) göndermeyiz. O yüzden genelde tek yönlü (DTO -> Entity) olması yeterlidir.
-    public User convertToEntity(UserRegistrationDTO userRegistrationDTO){
+    public User convertToUser(UserRegistrationDTO userRegistrationDTO){
         return modelMapper.map(userRegistrationDTO, User.class);
     }
+
+    
 }
