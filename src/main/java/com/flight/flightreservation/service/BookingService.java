@@ -118,7 +118,7 @@ public class BookingService {
     }
 
     // Kullanıcı bilet alırken sistemde e-postası kayıtlı değilse, onu o an sisteme
-    // dahil ediyoruz bu yazdığımız aşağıdaki metotla
+    // kaydediyoruz bu yazdığımız aşağıdaki metotla
     private User createUser(BookingCreateDTO bookingDTO) {
         // 1. Yeni bir User entity nesnesi oluşturuyoruz.
         User newUser = new User();
@@ -131,7 +131,7 @@ public class BookingService {
         newUser.setRole(Role.USER);
         // 4. Bu yeni kullanıcıyı veritabanına kaydedip, kaydedilmiş halini geri dönüyoruz.
         return userRepository.save(newUser);
-        
+
 
     }
 }

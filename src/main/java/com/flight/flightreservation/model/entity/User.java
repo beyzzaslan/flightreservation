@@ -1,5 +1,7 @@
 package com.flight.flightreservation.model.entity;
 
+import com.flight.flightreservation.model.enums.Role;
+
 import jakarta.persistence.*;
 import lombok.Data;
 
