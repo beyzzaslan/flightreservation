@@ -58,4 +58,17 @@ public class JwtUserDetails implements UserDetails {
         //Kullanıcının hesabı süresi dolmuş mu?
     }
 
+    @Override
+    public boolean isCredentialsNonExpired(){
+        return true;
+        //Şifre süresi dolmuş mu?;
+
+    }
+
+    @Override 
+    public boolean isAccountNonLocked(){
+        return true;
+        //Kullanıcı aktif mi, pasif mi?
+    }
+
 }
